@@ -1,0 +1,19 @@
+## Receive options.
+set imap_user=
+set imap_pass=
+set folder = imap://example.com/
+set spoolfile = +INBOX
+set postponed = +Drafts
+set record = +Sent
+
+## Send options.
+unset ssl_starttls
+set smtp_authenticators="login"
+set smtp_url=smtp://user@example.com
+set smtp_pass=
+set realname=''
+set from=user@example.com
+set hostname="example.com"
+
+## Hook -- IMPORTANT!
+account-hook imap://example.com/INBOX "set imap_user= imap_pass="
