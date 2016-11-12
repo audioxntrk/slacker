@@ -34,10 +34,10 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <C-L> <C-W><C-L>
-nnoremap <leader>b :vertical resize -5<CR>
-nnoremap <leader>f :vertical resize +5<CR>
-nnoremap <leader>m :resize -5<CR>
-nnoremap <leader>g :resize +5<CR>
+nnoremap <space>b :vertical resize -5<CR>
+nnoremap <space>f :vertical resize +5<CR>
+nnoremap <space>m :resize -5<CR>
+nnoremap <space>g :resize +5<CR>
 
 """"""""""""""Python Stuff""""""""""""""""""""
 let g:pydiction_location = '/home/skippy/.vim/bundle/pydiction/complete-dict'
