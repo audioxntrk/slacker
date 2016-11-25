@@ -1,0 +1,35 @@
+set border 0
+set barpadding 0 0 0 0
+set padding 0 0 0 0
+startup_message off
+escape F13
+set winname class
+unbind k
+exec /usr/bin/rpws init 6 -k
+bind C-1 exec rpws 1
+bind C-2 exec rpws 2
+bind C-3 exec rpws 3
+bind C-4 exec rpws 4
+bind C-5 exec rpws 5
+bind C-6 exec rpws 6
+bind M-1 exec rpws move1
+bind M-2 exec rpws move2
+bind M-3 exec rpws move3
+bind M-4 exec rpws move4
+bind M-5 exec rpws move5
+bind M-6 exec rpws move6
+bind semicolon exec
+bind h focusleft
+bind j focusdown
+bind k focusup
+bind l focusright
+bind H exchangeleft
+bind J exchangedown
+bind K exchangeup
+bind L exchangeright
+bind B exec ratbat
+bind P exec urxvt -e vim test.py
+bind c exec urxvt
+bind C exec urxvt -e screen -S new
+bind m exec urxvt -e mutt
+bind i exec ratpoison -c "echo `getip`"
